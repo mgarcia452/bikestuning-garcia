@@ -1,23 +1,16 @@
-// import logo from './logo.svg';
-import './App.css';
+import NavBar from './components/navbar/NavBar.jsx'
+import Footer from './components/footer/Footer.jsx'
+import './App.scss'
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src="../mrSparkle.png" className="App-logo" alt="logo" />
-        <p>
-          starting a new trip
-        </p>
-        <a
-          className="App-link"
-          href="https://www.youtube.com/channel/UCeRs7EQu3GdE_08BfO46stg"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          something funnier
-        </a>
-      </header>
+      <NavBar />
+      <body className="appBady">
+        <img src="../mrSparkleFull.png" className="App-logo" alt="logo" />
+      </body>
+      <Footer />
     </div>
   );
 }

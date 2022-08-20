@@ -1,0 +1,82 @@
+.bg-dark {
+    background: linear-gradient(90deg, rgb(255, 135, 245) 30%, rgb(37, 37, 65) 70%);
+    font-family: 'Antonio', sans-serif;
+    padding: 10px;
+    display: flex;
+    display: flex;
+    min-width: 320px;
+
+    img {
+        width: 42px;
+        height: 42px;
+        border-radius: 10px;
+        padding: 2px;
+        // background-color: turquoise;
+    }
+
+    & ul {
+        display: flex;
+        flex-direction: row;
+        margin-top: 4%;
+        text-transform: uppercase;
+        font-weight: bolder;
+    }
+
+    .nav-item {
+        margin-left: 10%;
+    }
+
+    & a:hover {
+        background-color: rgb(84, 155, 160);
+        transition: 0.5s;
+        border-radius: 10px;
+    }
+}
+
+.offcanvas-body {
+    background: linear-gradient(0deg, rgb(146, 79, 141) 10%, rgb(37, 37, 65) 70%);
+}
+
+.offcanvas-header {
+    background: linear-gradient(0deg, rgb(37, 37, 65) 50%, rgb(146, 79, 141) 100%);
+}
+
+.navbar-toggler {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transition: 0.5s ease-in-out;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    border: 0;
+}
+
+.toggler-icon {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: rgb(131, 58, 180);
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 30%, rgba(252, 176, 69, 1) 100%);
+    border-radius: 1px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.navbar-toggler.collapsed .top-bar {
+    margin-top: -20px;
+    transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+    margin-top: 20px;
+    transform: rotate(0deg);
+}
