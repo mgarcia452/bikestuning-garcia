@@ -1,86 +1,0 @@
-00:23:41	Lucas Vena:	sisi
-00:23:47	Erick Varela Martinez:	si
-00:23:50	Jose Gonzalez:	sisi
-00:25:28	Erick Varela Martinez:	se escucha un poco trabado
-00:25:39	Lucas Vena:	se entrecorta si
-00:26:06	Ariel Videla:	no
-00:27:04	Emiliano Alfonsin:	se me entrecorta a mi solo?
-00:27:16	Pablo Reta:	el audio si
-00:27:20	Pablo Reta:	a mi se me entrecorta mal
-00:32:00	Jose Gonzalez:	recomienda github  ? de ese me gusta que haces click derecho y te abre en la carpeta 📂
-00:37:07	José María Sosa:	ta feo el audio de nuevo
-00:37:25	José María Sosa:	no se te está entendiendo mucho
-00:43:13	Jose Gonzalez:	lo del autor es más por varias personas trabajan el proyecto ?
-00:44:11	Jose Gonzalez:	sisis
-00:44:15	Miguel Brito:	las convenciones sobre los comentarios de los commit esten en algun lado? ADD, FIX, etc
-00:44:32	Miguel Brito:	gracias
-00:44:56	Bruno Angel Tomas Zabala:	de 10, yo también las quiero
-00:45:13	Jose Gonzalez:	genial
-00:47:40	José María Sosa:	Ahí está lo principal de git, trabajar en varias ramas. nunca experimenten en main créense una Branch que se llame testing o algo así jajaj
-00:50:51	Jose Gonzalez:	los cambios
-00:50:59	Jose Gonzalez:	como se en cual rama estoy
-00:51:12	Jose Gonzalez:	ahh listo
-00:51:19	Jose Gonzalez:	gracias
-00:54:15	[Profe] Conrado Lanusse:	git checkout -b “<nombre de la branch>”
-00:59:29	Jose Gonzalez:	ahh bien
-01:01:17	Diego Fernández:	eso suele ser tan facil?
-01:01:18	Diego Fernández:	ajajajaja
-01:01:43	Diego Fernández:	🙃
-01:03:30	Priscila Bulgach:	se empezo a escuchar raro o es mi internet?
-01:03:50	Bruno Angel Tomas Zabala:	si
-01:03:52	Erick Varela Martinez:	si se escucha mal
-01:03:52	Miguel Brito:	solo un poco, pero aun se entiende
-01:03:52	Bruno Angel Tomas Zabala:	un poco
-01:03:56	Pablo Reta:	se escucha raro pero se entiende
-01:04:32	Lucas Vena:	maldito fibertel
-01:06:46	Pablo Reta:	hay mucho delay en la imagen
-01:06:48	Pablo Reta:	eso si
-01:07:46	Miguel Brito:	Si
-01:10:33	Miguel Brito:	Esa le paso a casi todos en la primera clase jaja
-01:11:42	Jose Gonzalez:	perdón justo me tengo que retirar queda guardado ?
-01:13:25	Jose Gonzalez:	gracias por la clase Santi 🙌🙌
-01:13:43	José María Sosa:	Che yo borre el reportWebVitals.js y no me compilaba más tuve que reestablecerlo
-01:13:56	José María Sosa:	el logo te quedó en la app.js tenes que borrar el import
-01:14:55	Pablo Reta:	si de una
-01:14:56	Luis Angel Lopez Solis:	Me parece correcto
-01:14:57	Luis Angel Lopez Solis:	Jajaja
-01:15:23	José María Sosa:	el reportWebVitals de donde lo tengo que borrar entonces?
-01:15:29	José María Sosa:	Donde está el llamado de eso?
-01:16:02	José María Sosa:	ahh ya lo vi
-01:20:04	Luis Angel Lopez Solis:	Sisi
-01:21:22	[Profe] Conrado Lanusse:	"Print to console": {		"prefix": "component",		"body": [			"import React from 'react';",			"",			"const ${1:myComponent} = () => {",			"",			"    return (",			"        <div>${1:myComponent}</div>",			"    )",			"}",			"",			"export default ${1:myComponent}"		],		"description": "Basic component"	}
-01:21:36	Luis Angel Lopez Solis:	Que grande jaja
-01:22:29	Luis Angel Lopez Solis:	Hay uno pero solo habemus 7 personas :c
-01:24:12	Luis Angel Lopez Solis:	https://discord.gg/jrbNP8nQ
-01:25:09	Luis Angel Lopez Solis:	Ahhh buenísimo
-01:25:30	[Profe] Conrado Lanusse:	https://icon-sets.iconify.design
-01:25:32	Luis Angel Lopez Solis:	Bastante, pero bueno jaja
-01:27:47	Luis Angel Lopez Solis:	Se ve bastante bueno
-01:27:52	Lucas Vena:	impeca
-01:28:02	Luis Angel Lopez Solis:	Por mi, estamos bien c:
-01:28:09	Luis Angel Lopez Solis:	muchas gracias!!
-01:28:24	José María Sosa:	Mañana
-01:28:26	Luis Angel Lopez Solis:	Mañana
-01:28:31	Luis Angel Lopez Solis:	A las 23:59
-01:28:48	Luis Angel Lopez Solis:	git commit -m ""
-01:28:48	Florencia Weingartner:	git commit -m
-01:28:48	Miguel Brito:	git commit
-01:28:59	José María Sosa:	Che yo tengo una consulta pero no va a dar el tiempo ahora, fíjate que entregué el desafío y te dejé la consulta ahí en la entrega jaja
-01:29:29	Florencia Weingartner:	push
-01:29:30	José María Sosa:	push
-01:29:33	Luis Angel Lopez Solis:	git push -u origin master
-01:29:54	Luis Angel Lopez Solis:	ah eso jaja
-01:30:28	Luis Angel Lopez Solis:	Borrar el contenido? o borrar el readme directamente?
-01:30:43	Luis Angel Lopez Solis:	Vale vale jajaja
-01:31:46	Pablo Reta:	genil nos vemos
-01:31:47	Erick Varela Martinez:	muchas gracias
-01:31:48	Florencia Weingartner:	Muchas gracias Santi!
-01:31:50	Pablo Reta:	gracias por la clase
-01:32:02	Miguel Brito:	al final estuvo muy bien el audio
-01:32:02	Luis Angel Lopez Solis:	Muchisimas gracias Santi! buenísimo todo!!
-01:32:04	Lucas Vena:	gracias Santi! capo
-01:32:05	Miguel Brito:	gracias por el tiempo Santi
-01:32:08	Matias Garcia:	un crack, gracias a vos
-01:32:14	Priscila Bulgach:	Genial el after! Gracias!
-01:32:21	Bruno Angel Tomas Zabala:	muchas gracias
-01:32:25	Miguel Brito:	buenas noches
