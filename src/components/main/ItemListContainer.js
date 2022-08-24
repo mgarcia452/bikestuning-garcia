@@ -18,7 +18,7 @@ export const ItemListContainer = () => {
         { id: 13, type: "polish", part: "head", hp: 1.05, price: 1000 },
         { id: 14, type: "turbo", part: "stage1", hp: 1.25, price: 8000 },
         { id: 15, type: "turbo", part: "stage2", hp: 1.38, price: 14000 },
-        { id: 16, type: "crankshaft", part: "crankshaft", hp: 1.8, price: 6500 }
+        { id: 16, type: "crank", part: "crank", hp: 1.8, price: 6500 }
 
     ]
     return (

@@ -19,12 +19,6 @@ export const Navbar = () => {
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Products</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Sobre Nosotros</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contactanos</a>
-                            </li>
                         </ul>
                     </div>
                 </div>
