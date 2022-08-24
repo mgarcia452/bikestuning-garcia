@@ -4,7 +4,7 @@ import { Header } from './components/header/Header.js';
 import { Footer } from './components/footer/Footer.js';
 import { Main } from './components/main/Main';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css'
+import './App.gotcss'
 
 function App() {
 
