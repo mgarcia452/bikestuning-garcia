@@ -1,19 +1,20 @@
-// import { Navbar } from './components/Navbar/Navbar.js';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css'
 import { Header } from './components/header/Header.js';
 import { Footer } from './components/footer/Footer.js';
-import { Main } from './components/main/Main';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.gotcss'
+import ItemListContainer from './components/ItemListContainer';
 
 function App() {
 
   return (
-    <div className="App">
+
+    <>
       <Header />
-      <Main />
+      <div className="App container mt-5">
+        <ItemListContainer />
+      </div>
       <Footer />
-    </div>
+    </>
   );
 }
 

@@ -6,16 +6,8 @@
     list-style: none;
 }
 
-.App {
-    background-color: rgb(22, 11, 34);
-    background-image: url('../public/assets/mrSparkleFull.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100vh;
-}
-
-
 .moes {
+
     height: 40px;
     margin-bottom: 15px;
 }
