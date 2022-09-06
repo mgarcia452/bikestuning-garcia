@@ -1,20 +1,29 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
-import { Header } from './components/header/Header.js';
-import { Footer } from './components/footer/Footer.js';
-import ItemListContainer from './components/ItemListContainer';
+import { Navbar } from './components/header/Navbar.js'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer.js';
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 
-function App() {
+const App = () => {
 
   return (
 
-    <>
-      <Header />
-      <div className="App container mt-5">
-        <ItemListContainer />
-      </div>
-      <Footer />
-    </>
+    <div className='app-body'>
+
+      <BrowserRouter>
+
+        <Navbar />
+
+        <Routes>
+          <Route path='/' element={<ItemListContainer />} />
+          <Route path='/productos/:partId' element={<ItemListContainer />} />
+          <Route path='/item/:itemId' element={<ItemDetailContainer />} />
+          <Route path='*' element={<Navigate to="/" />} />
+        </Routes>
+
+      </BrowserRouter>
+    </div>
   );
 }
 

@@ -6,13 +6,16 @@
     list-style: none;
 }
 
+.app-body {
+    background-color: rgba(189, 189, 0, 0.256);
+}
 .moes {
-
     height: 40px;
     margin-bottom: 15px;
 }
 
 .moes-shadow {
-    box-shadow:  5px 2px 15px 2px white;
+    box-shadow: 5px 2px 15px 2px black;
+    background-color: red;
     border-radius: 50%;
 }

@@ -1,0 +1,19 @@
+.backgroundMine {
+    /* background-color: black; */
+    padding: 15px;
+    box-shadow: 1px 1px 10px 1px rgb(148, 148, 148);
+    margin: 5px
+}
+
+.achus {
+    /* background-color: green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.achus img {
+    max-width: 200px;
+    max-height: 200px;
+}
