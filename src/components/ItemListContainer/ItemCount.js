@@ -1,5 +1,5 @@
-// import React, { useState } from 'react';
-// import { Button } from 'reactstrap';
+import React, { useState } from 'react';
+import { Button } from 'reactstrap';
 
 const ItemCount = ({ stock, addToCart }) => {
     // pase el useState a let en vez de const para poder setearlo a cero en el Reset
@@ -28,4 +28,4 @@ const ItemCount = ({ stock, addToCart }) => {
     )
 }
 
-// export default ItemCount
+export default ItemCount

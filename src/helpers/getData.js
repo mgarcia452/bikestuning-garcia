@@ -5,8 +5,8 @@ export const getData = () => {
 
     return new Promise( (resolve, reject) => {
         setTimeout(() => {
-            resolve(stock)
-            // !error ? resolve(arrayProducts) : reject(alert("error"));
-        }, 500)
+            // resolve(stock)
+            !"" ? resolve(stock) : reject(alert("error"));
+        }, 1000)
     } )
 }

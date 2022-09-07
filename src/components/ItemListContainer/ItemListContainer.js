@@ -3,60 +3,43 @@ import { useEffect, useState } from "react";
 import { getData } from '../../helpers/getData'
 import ItemList from './ItemList';
 import { useParams } from 'react-router-dom';
+import { Spinner } from "reactstrap";
 
 
 const ItemListContainer = () => {
 
-    // const [data, setData] = useState([]);
-    // const [loading, setLoading] = useState(true);
-
-    // useEffect(() => {
-    //     getData()
-    //         .then(res => {
-    //             setData(res)
-    //             // setLoading(false)
-    //         })
-    //         .catch(error => console.log(error))
-    // }, []);
-
-
-    // return (
-    //     <div>
-    //         <ItemList data={data} />
-    //     </div>
-    // )
     const [products, setProducts] = useState([])
     const [loading, setLoading] = useState(true)
 
-    const { partId } = useParams()
-    // console.log(partId)
+    const { typeId } = useParams()
+    console.log(typeId);
 
     useEffect(() => {
         setLoading(true)
 
         getData()
-            .then( (res) => {
-                if (!partId) {
+            .then((res) => {
+                if (!typeId) {
                     setProducts(res)
                 } else {
-                    setProducts( res.find((prod) => prod.part === partId) )
+                    setProducts(res.filter((prod) => prod.type === typeId))
                 }
             })
-            .catch( (error) => {
+            .catch((error) => {
                 console.log(error)
             })
             .finally(() => {
                 setLoading(false)
             })
-    }, [partId])
+    }, [typeId])
 
 
     return (
         <div>
             {
-                loading 
-                ? <h2>Loading...</h2>
-                : <ItemList products={products}/>
+                loading
+                    ? <Spinner color="danger" />
+                    : <ItemList products={products} />
             }
         </div>
     )

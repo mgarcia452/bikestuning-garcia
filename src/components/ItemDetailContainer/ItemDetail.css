@@ -1,3 +1,4 @@
+
 .button-counter {
     display: flex;
     flex-direction: column;
@@ -5,7 +6,8 @@
 }
 
 .cards-parts {
-    box-shadow: 2px 3px 10px 1px rgba(0, 0, 0, 0.8);
+    box-shadow: 2px 3px 10px 1px rgba(0, 0, 0, 0.2);
+    text-align: center;
 }
 .card img {
     width: 200px;
