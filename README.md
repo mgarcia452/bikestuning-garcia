@@ -1,10 +1,14 @@
-# Getting Started with Create React App
+# Bikestuning
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Un e-commerce de piezas de upgrade de vehiculos.
 
-## Available Scripts
+## Getting Started 🚀
 
 In the project directory, you can run:
+
+### `git clone https://github.com/mgarcia452/bikestuning-garcia.git`
+
+Clones the repository with all its dependencies. So, to not need, installing them independently.
 
 ### `npm start`
 
@@ -68,3 +72,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Built With
+
+- Javascript HTML5 React CSS3 Reactstrap NodeJS
+
+## Author ✒️
+
+- Matías García
