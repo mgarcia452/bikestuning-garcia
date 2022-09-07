@@ -1,3 +1,4 @@
+![Animation](https://user-images.githubusercontent.com/103382324/188972132-8e6e7891-8448-49d3-ba1f-7154d5f7c019.gif)
 # Bikestuning
 
 Un e-commerce de piezas de upgrade de vehiculos.
