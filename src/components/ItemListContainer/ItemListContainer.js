@@ -40,7 +40,7 @@ const ItemListContainer = () => {
                 loading
                     ? <Spinner color="danger" />
                     : <ItemList products={products} />
-            }
+            }   
         </div>
     )
 }

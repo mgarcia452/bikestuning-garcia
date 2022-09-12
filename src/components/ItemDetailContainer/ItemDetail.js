@@ -6,8 +6,17 @@ import './ItemDetail.css';
 const ItemDetail = ({ item }) => {
 
     const { type, part, hp, stock, price, img } = item;
+
     const addToCart = (count) => {
-        count > 0 ? console.log("se anadio al carrito", count, type, part, hp, price, img) : console.log("no se puede agregar");
+
+        const itemToCart = {
+            type: item.type, 
+            part: item.part, 
+            hp: item.hp, 
+            price: item.price
+        }
+
+        count > 0 ? console.log(itemToCart) : console.log("no se puede agregar");
     }
 
     return (
@@ -18,7 +27,13 @@ const ItemDetail = ({ item }) => {
                     <CardTitle tag="h4">Type: {type}</CardTitle>
                     <CardText> {part} </CardText>
                     <CardText> <p> Power increase %: {hp} </p> </CardText>
-                    <Button className='buttons-addrest'> <ItemCount stock={stock} addToCart={addToCart} /> </Button>
+
+                    <Button className='buttons-addrest'>
+                        <ItemCount
+                            stock={stock}
+                            addToCart={addToCart} />
+                    </Button>
+
                 </CardBody>
 
                 <CardFooter>
