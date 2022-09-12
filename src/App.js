@@ -4,8 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer.js';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-import Prueba from './components/CarpetaPrueba/Prueba';
-import Prueba2 from './components/CarpetaPrueba/Prueba2';
+import Prueba from './components/Clases/Prueba';
+import Prueba2 from './components/Clases/Prueba2';
 import Cart  from './components/Cart/Cart';
 
 const App = () => {
