@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { Button } from 'reactstrap';
-import { Link } from 'react-router-dom';
 
-const ItemCount = ({ stock, addToCart}) => {
+const ItemCount = ({ stock, handleLoad }) => {
     // pase el useState a let en vez de const para poder setearlo a cero en el Reset
     let [count, setCount] = useState(0);
 
@@ -25,9 +24,10 @@ const ItemCount = ({ stock, addToCart}) => {
                 <h3> {count} </h3>
                 <Button className='btn' onClick={handleSubstract}> - </Button>
             </div>
-            <Button className='btn-info' disabled={stock <= 0} onClick={() => addToCart(count)}> Add to Cart </Button>
-            <Button className="btn-danger" onClick={handleReset}> Reset </Button>
-            <Link to={'/Cart'} onClick={handleAdd} className="btn btn-danger"> Finish </Link>
+            <div>
+                <Button className="btn btn-primary" disabled={count <= 0} onClick={() => handleLoad(count)}> Add </Button>
+                <Button className="btn-danger" onClick={handleReset}> Clean </Button>
+            </div>
         </div>
     )
 }

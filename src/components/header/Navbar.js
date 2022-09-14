@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 export const Navbar = () => {
     return (
         <div>
-            <nav className="navbar navbar-expand-lg bg-danger">
+            <nav className="navbar navbar-expand-md">
                 <CartWidget />
                 <div className="container">
 

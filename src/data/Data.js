@@ -3,7 +3,7 @@ export const stock = [
     { id: 2, type: "intake", part: "funnel", hp: 2, stock: 15, price: 80, img: '/assets/products/funnel.jpg' },
     { id: 3, type: "intake", part: "ram", hp: 5, stock: 50, price: 300, img: '/assets/products/ram.jpg' },
     { id: 4, type: "exhaust", part: "muffler", hp: 2, stock: 50, price: 1000, img: '/assets/products/muffler.jpg' },
-    { id: 5, type: "exhaust", part: "full-system", hp: 20, stock: 10, price: 1750, img: '/assets/products/full.jpg' },
+    { id: 5, type: "exhaust", part: "full-system", hp: 12, stock: 10, price: 1750, img: '/assets/products/full.jpg' },
     { id: 6, type: "ecu", part: "stage1", hp: 5, stock: 100, price: 300, img: '/assets/products/stage1.jpg' },
     { id: 7, type: "ecu", part: "stage2", hp: 12, stock: 100, price: 450, img: '/assets/products/stage2.jpg' },
     { id: 8, type: "fuel", part: "inyectors", hp: 3, stock: 10, price: 1200, img: '/assets/products/inyector.jpg' },

@@ -1,11 +1,32 @@
-.carrito-colores {
-    border: none;
-    height: 40px;
-    width: 40px;
-    background: none;
-}
 .carrito-container {
     margin-left: 5%;
     background: none;
     border: none;
+    display: flex;
+    flex-direction: row;;
+    font-size: larger;
+}
+
+.carrito-container span {
+    margin-left: 10px;
+    font-size: larger;
+    font-weight: bold;
+    color: rgb(41, 109, 235);
+}
+
+.carrito-bs {
+    width: 40px;
+    height: 40px;
+    box-shadow: 1px 1px 15px 1px rgb(255, 255, 255);
+    border-radius: 20%;
+}
+
+.moes {
+    height: 40px;
+}
+
+.moes-shadow {
+    box-shadow: 1px 1px 15px 1px rgb(255, 255, 255);
+    background-color: rgba(255, 0, 0, 0.181);
+    border-radius: 50%;
 }
