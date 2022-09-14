@@ -5,37 +5,13 @@ import ItemListContainer from './components/ItemListContainer/ItemListContainer.
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Cart from './components/Cart/Cart';
-import { CartContext } from './Context/CartContext';
-import { useState } from 'react';
+import { CartProvider } from './Context/CartContext';
+// import { useState } from 'react';
 
 
 const App = () => {
-
-  const [cart, setCart] = useState([])
-
-  const addToCart = (item) => {
-    setCart([...cart, item])
-  }
-
-  const isInCart = (id) => {
-    return cart.some((item) => item.id === id)
-  }
-
-  const cartQuantity = () => {
-    return cart.reduce((acc, item) => acc + item.cantidad, 0)
-  }
-
   return (
-    <CartContext.Provider
-      value={
-        {
-          cart,
-          addToCart,
-          isInCart,
-          cartQuantity
-        }
-      }>
-
+    <CartProvider>
       <BrowserRouter>
         <Navbar />
         <Routes>
@@ -46,8 +22,7 @@ const App = () => {
           <Route path='/Cart' element={<Cart />} />
         </Routes>
       </BrowserRouter>
-
-    </CartContext.Provider>
+    </CartProvider>
   );
 }
 

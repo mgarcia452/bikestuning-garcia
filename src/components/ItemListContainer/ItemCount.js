@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 import { Button } from 'reactstrap';
 
-const ItemCount = ({ stock, handleLoad }) => {
+const ItemCount = ({ stock, handleLoad, count, setCount }) => {
     // pase el useState a let en vez de const para poder setearlo a cero en el Reset
-    let [count, setCount] = useState(0);
+    // let [count, setCount] = useState(0);
 
     const handleAdd = () => {
         count < stock ? setCount(count + 1) : console.log("no hay mas, pipi, espera q vuelva a entrar")

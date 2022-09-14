@@ -8,7 +8,7 @@ import './ItemDetail.css';
 
 const ItemDetail = ({ item }) => {
 
-    const [cantidad, setCantidad] = useState(1)
+    const [cantidad, setCantidad] = useState(0)
 
     const { cart, addToCart, isInCart } = useContext(CartContext)
     console.log(cart)
@@ -21,13 +21,10 @@ const ItemDetail = ({ item }) => {
             type: item.type,
             part: item.part,
             hp: item.hp,
-            price: item.price
+            price: item.price,
+            cantidad
         }
-
-        // addToCart([...cart, itemToCart])
         count > 0 ? addToCart(itemToCart) : console.log("no se puede agregar");
-
-        // console.log(isInCart(item.id))
     }
 
     return (
@@ -44,8 +41,8 @@ const ItemDetail = ({ item }) => {
                             className='buttons-addrest'
                             stock={stock}
                             handleLoad={handleLoad}
-                            counter={cantidad}
-                            setCounter={setCantidad}
+                            count={cantidad}
+                            setCount={setCantidad}
 
                         />
                     }

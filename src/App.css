@@ -5,9 +5,3 @@
     text-decoration: none;
     list-style: none;
 }
-
-.cart-cont {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
