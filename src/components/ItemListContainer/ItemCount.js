@@ -22,7 +22,7 @@ const ItemCount = ({ stock, handleLoad, count, setCount }) => {
             <div className='btn buttons'>
                 <Button onClick={handleAdd}> + </Button>
                 <h3> {count} </h3>
-                <Button className='btn' onClick={handleSubstract}> - </Button>
+                <Button className='btn' onClick={handleSubstract} disabled={count <= 0}> - </Button>
             </div>
             <div>
                 <Button className="btn btn-primary" disabled={count <= 0} onClick={() => handleLoad(count)}> Add </Button>

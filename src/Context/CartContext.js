@@ -12,7 +12,7 @@ export const CartProvider = ({ children }) => {
     }
 
     const removeItem = (id) => {
-        setCart( cart.filter((item) => item.id !== id) )
+        setCart(cart.filter((item) => item.id !== id))
     }
 
     const isInCart = (id) => {
@@ -26,26 +26,33 @@ export const CartProvider = ({ children }) => {
     const cartTotal = () => {
         return cart.reduce((acc, item) => acc + (item.cantidad * item.price), 0)
     }
-    
+
     const powerTotal = () => {
         return cart.reduce((acc, item) => acc + item.hp, 0)
     }
+    
+    const isOff = () => {
+        return cart.reduce((acc, item) => acc + ((item.cantidad * item.price) - (item.cantidad * item.price * (item.off / 100))), 0)
+    }
 
     const emptyCart = () => {
-        
+
         Swal.fire({
             title: 'Are you sure?',
             icon: 'warning',
             showCancelButton: true,
-            confirmButtonColor: '#3085d6',
-            cancelButtonColor: '#d33',
+            background: '#000',
+            color: '#FFFFFF',
+            confirmButtonColor: '#1894d6',
+            cancelButtonColor: '#d44',
             confirmButtonText: 'Yes, empty it!'
         }).then((result) => {
             if (result.isConfirmed) {
-                setCart([])
+                setCart([])                   
             }
         })
     }
+   
 
     return (
         <CartContext.Provider value={
@@ -57,7 +64,8 @@ export const CartProvider = ({ children }) => {
                 cartTotal,
                 emptyCart,
                 removeItem,
-                powerTotal
+                powerTotal,
+                isOff,
             }
         }>
             {children}

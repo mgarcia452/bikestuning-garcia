@@ -5,7 +5,6 @@ import ItemList from './ItemList';
 import { useParams } from 'react-router-dom';
 import { Spinner } from "reactstrap";
 
-
 const ItemListContainer = () => {
 
     const [products, setProducts] = useState([])
@@ -33,14 +32,13 @@ const ItemListContainer = () => {
             })
     }, [typeId])
 
-
     return (
         <div>
             {
                 loading
-                    ? <Spinner color="danger" />
+                    ? <Spinner color="danger" className="spinnercito" />
                     : <ItemList products={products} />
-            }   
+            }
         </div>
     )
 }

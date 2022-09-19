@@ -13,7 +13,7 @@ const ItemDetail = ({ item }) => {
     const { cart, addToCart, isInCart } = useContext(CartContext)
     console.log(cart)
 
-    const { id, type, part, hp, stock, price, img } = item;
+    const { id, off, type, part, hp, stock, price, img } = item;
 
     const handleLoad = (count) => {
         const itemToCart = {
@@ -22,6 +22,7 @@ const ItemDetail = ({ item }) => {
             part: item.part,
             hp: item.hp,
             price: item.price,
+            off: item.off,
             cantidad
         }
         count > 0 ? addToCart(itemToCart) : console.log("no se puede agregar");
@@ -35,21 +36,25 @@ const ItemDetail = ({ item }) => {
                     <CardTitle tag="h4">Type: {type}</CardTitle>
                     <CardText> {part} </CardText>
                     <CardText> Power increase %: {hp} </CardText>
+                    {/* {off && <CardText> {off}% OFF! </CardText> } */}
                     {isInCart(item.id) ?
-                        <Link to='/Cart' className="btn btn-success"> Finish </Link> :
+                    <>
+                        <Link to='/Cart' className="btn btn-success"> Cart </Link>
+                        <Link to='/' className="btn btn-info"> products </Link>
+                    </>:
                         <ItemCount
-                            className='buttons-addrest'
-                            stock={stock}
-                            handleLoad={handleLoad}
-                            count={cantidad}
-                            setCount={setCantidad}
-
+                        className='buttons-addrest'
+                        stock={stock}
+                        handleLoad={handleLoad}
+                        count={cantidad}
+                        setCount={setCantidad}
                         />
                     }
                 </CardBody>
                 <CardFooter>
                     <p>Stock: {stock} </p>
                     <p>Price : ${price}</p>
+                        {(cantidad > 1 && off) && <CardText> {off}% OFF! </CardText>}
                 </CardFooter>
 
             </Card>

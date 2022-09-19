@@ -9,8 +9,12 @@ export const CartWidget = () => {
     const { cartQuantity } = useContext(CartContext)
     return (
         <button className='carrito-container' alt="">
-            <Link to={'/Cart'}><BsCart4 className='carrito-bs'/></Link>
-            <span>{cartQuantity()}</span>
+            {cartQuantity() > 0 &&
+                <>
+                    <Link to={'/Cart'}><BsCart4 className='carrito-bs' /></Link>
+                    <span>{cartQuantity()}</span>
+                </>
+            }
         </button>
     )
 }

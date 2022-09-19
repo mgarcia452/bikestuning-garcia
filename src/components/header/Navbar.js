@@ -1,8 +1,13 @@
 import './Navbar.css';
 import { CartWidget } from '../header/cartwidget/CartWidget'
 import { Link } from 'react-router-dom';
+import { Button } from 'reactstrap';
+import { useLoginContext } from '../../Context/LoginContext';
 
 export const Navbar = () => {
+
+    const { user, logout } = useLoginContext()
+
     return (
         <div>
             <nav className="navbar navbar-expand-md">
@@ -20,15 +25,14 @@ export const Navbar = () => {
                         <li className="nav-item">
                             <Link to="/productos/exhaust" className="nav-link">Exhaust</Link>
                         </li>
-                        <li className="nav-item">
-                            <Link to="/prueba" className="nav-link">Prueba</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link to="/prueba2" className="nav-link">Prueba2</Link>
-                        </li>
                     </ul>
                 </div>
-                <CartWidget className="carrito-widye"/>
+                <CartWidget className="carrito-widye" />
+
+                <div className='header-logout'>
+                    <small>welcome: {user.user} </small>
+                    <Button className='btn btn-warning' onClick={logout}> LogOut</Button>
+                </div>
             </nav>
         </div>
     )
