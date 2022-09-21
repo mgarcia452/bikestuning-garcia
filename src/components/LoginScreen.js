@@ -4,19 +4,19 @@ import { LoginContext } from '../Context/LoginContext'
 const LoginScreen = () => {
 
     const { login, user, logout } = useContext(LoginContext)
-    console.log(user)
+    // console.log(user)
 
     const [email, setEmail] = useState('')
     const [pass, setPass] = useState('')
 
     const handleEmailChange = (e) => {
-        console.log(e.target.value)
+        // console.log(e.target.value)
         setEmail(e.target.value)
 
     }
 
     const handlePassChange = (e) => {
-        console.log(e.target.value)
+        // console.log(e.target.value)
         setPass(e.target.value)
 
     }

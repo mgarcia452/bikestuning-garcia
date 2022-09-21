@@ -1,8 +1,8 @@
-import './Navbar.css';
 import { CartWidget } from '../header/cartwidget/CartWidget'
 import { Link } from 'react-router-dom';
 import { Button } from 'reactstrap';
 import { useLoginContext } from '../../Context/LoginContext';
+import './Navbar.css';
 
 export const Navbar = () => {
 
@@ -10,11 +10,11 @@ export const Navbar = () => {
 
     return (
         <div>
-            <nav className="navbar navbar-expand-md">
+            <nav className="navbar navbar-expand-md ">
                 <Link to="/" className="Nav navbar-brand" >
                     <img src="./assets/moes.png" className="moes moes-shadow" alt="logo"></img>
                 </Link>
-                <div className="container">
+                <div className="container categories">
                     <ul className="navbar-nav">
                         <li className="nav-item">
                             <Link to="/" className="nav-link">Home</Link>
@@ -24,6 +24,24 @@ export const Navbar = () => {
                         </li>
                         <li className="nav-item">
                             <Link to="/productos/exhaust" className="nav-link">Exhaust</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link to="/productos/ecu" className="nav-link">ECU</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link to="/productos/polish" className="nav-link">Turnery</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link to="/productos/fuel" className="nav-link">Fuel</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link to="/productos/turbo" className="nav-link">Turbo</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link to="/productos/camshaft" className="nav-link">Shafts</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link to="/productos/crankshaft" className="nav-link">Crank</Link>
                         </li>
                     </ul>
                 </div>

@@ -1,9 +1,9 @@
-// import { Spinner } from 'reactstrap';
-import { useEffect, useState } from "react";
-import { getData } from '../../helpers/getData'
 import ItemList from './ItemList';
 import { useParams } from 'react-router-dom';
+import { useEffect, useState } from "react";
 import { Spinner } from "reactstrap";
+import { db } from "../../firebase/config";
+import { collection, getDocs, query, where } from "firebase/firestore";
 
 const ItemListContainer = () => {
 
@@ -11,25 +11,25 @@ const ItemListContainer = () => {
     const [loading, setLoading] = useState(true)
 
     const { typeId } = useParams()
-    console.log(typeId);
 
     useEffect(() => {
         setLoading(true)
 
-        getData()
-            .then((res) => {
-                if (!typeId) {
-                    setProducts(res)
-                } else {
-                    setProducts(res.filter((prod) => prod.type === typeId))
-                }
-            })
-            .catch((error) => {
-                console.log(error)
+        const productsRef = collection(db, 'poducts')
+        const q = typeId
+                ? query(productsRef, where ('type', '==', typeId) )
+                : productsRef
+
+        getDocs(q)
+            .then((resp) => {
+                const productsDB = resp.docs.map( (doc) => ({ id: doc.id, ...doc.data() }))
+                console.log(productsDB)
+                setProducts(productsDB)
             })
             .finally(() => {
-                setLoading(false)
+                 setLoading(false)
             })
+
     }, [typeId])
 
     return (
