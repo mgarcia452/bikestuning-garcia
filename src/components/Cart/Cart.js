@@ -54,7 +54,8 @@ const Cart = () => {
           </Link>
 
         {/* tengo pensado habilitar boton de pago */}
-          <Button className="btn btn-success empty-cart"> Pay </Button>
+          {/* <Button className="btn btn-success empty-cart"> Pay </Button> */}
+          <Link className="btn btn-success" to='/Checkout'> Finish </Link>
         </div>
       </div>
     </div>

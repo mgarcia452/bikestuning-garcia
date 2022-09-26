@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useContext, useState } from "react";
 import Swal from 'sweetalert2'
 
 export const CartContext = createContext();
@@ -30,7 +30,7 @@ export const CartProvider = ({ children }) => {
     const powerTotal = () => {
         return cart.reduce((acc, item) => acc + item.hp, 0)
     }
-    
+
     const isOff = () => {
         return cart.reduce((acc, item) => acc + ((item.cantidad * item.price) - (item.cantidad * item.price * (item.off / 100))), 0)
     }
@@ -48,11 +48,28 @@ export const CartProvider = ({ children }) => {
             confirmButtonText: 'Yes, empty it!'
         }).then((result) => {
             if (result.isConfirmed) {
-                setCart([])                   
+                setCart([])
             }
         })
     }
-   
+
+    const finishPurchase = () => {
+        setCart([])
+    }
+
+    const finishPurchaseWithSwal = (id) => {
+        Swal.fire({
+            title: 'succesful purchase',
+            text: `you buying order is: ${id}`,
+            icon: 'success',
+            background: '#000',
+            color: '#FFFFFF',
+            confirmButtonColor: '#1894d6',
+            confirmButtonText: 'DO it!'
+        })
+        setCart([])
+    }
+
 
     return (
         <CartContext.Provider value={
@@ -66,9 +83,15 @@ export const CartProvider = ({ children }) => {
                 removeItem,
                 powerTotal,
                 isOff,
+                finishPurchaseWithSwal,
+                finishPurchase
             }
         }>
             {children}
         </CartContext.Provider>
     )
+}
+
+export const useCartContext = () => {
+    return useContext(CartContext)
 }
