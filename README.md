@@ -1,7 +1,7 @@
 ![Animation](https://user-images.githubusercontent.com/103382324/188972132-8e6e7891-8448-49d3-ba1f-7154d5f7c019.gif)
 # Bikestuning
 
-Un e-commerce de piezas de upgrade de vehiculos.
+Un e-commerce de piezas de upgrade de vehiculos, donde se caclula porcentualmente la potencia esperada.
 
 ## Getting Started 🚀
 
@@ -76,7 +76,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ## Built With
 
-- Javascript HTML5 React CSS3 Reactstrap NodeJS
+- Javascript HTML5 React CSS3 Reactstrap NodeJS Firebase
 
 ## Author ✒️
 
