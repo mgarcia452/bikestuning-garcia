@@ -1,4 +1,4 @@
-import { CartWidget } from '../header/cartwidget/CartWidget'
+import { CartWidget } from '../Cartwidget/CartWidget'
 import { Link } from 'react-router-dom';
 import { Button } from 'reactstrap';
 import { useLoginContext } from '../../Context/LoginContext';
@@ -49,7 +49,7 @@ export const Navbar = () => {
 
                 <div className='header-logout'>
                     <small>welcome: {user.user} </small>
-                    <Button className='btn btn-warning' onClick={logout}> LogOut</Button>
+                    <Button className='btn btn-outline-warning button-logout' onClick={logout}> Logout</Button>
                 </div>
             </nav>
         </div>

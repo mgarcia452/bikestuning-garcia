@@ -2,6 +2,21 @@ import { createContext, useContext, useState } from "react";
 
 export const LoginContext = createContext()
 
+const usuarios = [
+    {
+        email: 'dai@gmail.com',
+        password: '1'
+    },
+    {
+        email: 'mati@gmail.com',
+        password: '2'
+    },
+    {
+        email: 'lauti@gmail.com',
+        password: '3'
+    }
+]
+
 export const LoginProvider = ({ children }) => {
 
     const [user, setUser] = useState({
@@ -9,21 +24,6 @@ export const LoginProvider = ({ children }) => {
         logged: false,
         error: ''
     })
-    const usuarios = [
-        {
-            email: 'dai@gmail.com',
-            password: '1'
-        },
-        {
-            email: 'mati@gmail.com',
-            password: '2'
-        },
-        {
-            email: 'lauti@gmail.com',
-            password: '3'
-        }
-
-    ]
 
     const login = (values) => {
         const match = usuarios.find(user => user.email === values.email)

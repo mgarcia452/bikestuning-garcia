@@ -1,8 +1,8 @@
-import './CartWidget.css'
-import { Link } from 'react-router-dom'
-import { BsCart4 } from 'react-icons/bs'
 import { useContext } from 'react'
-import { CartContext } from '../../../Context/CartContext'
+import { BsCart4 } from 'react-icons/bs'
+import { Link } from 'react-router-dom'
+import { CartContext } from '../../Context/CartContext'
+import './CartWidget.css'
 
 export const CartWidget = () => {
 

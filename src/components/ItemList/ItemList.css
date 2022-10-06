@@ -1,0 +1,23 @@
+
+.cards-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: none;
+}
+
+.cards-list img {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.image-banner {
+    width: 100%;
+}
+
+.catalogo {
+    text-align: center;
+    font-size: 2rem;
+    background: linear-gradient(20deg, rgb( 252, 176, 69, 1) 10%,  rgba(0, 0, 0, 0.642) 100%);
+}

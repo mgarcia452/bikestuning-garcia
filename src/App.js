@@ -1,10 +1,8 @@
-import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { CartProvider } from './Context/CartContext';
-import { LoginProvider, useLoginContext } from './Context/LoginContext';
-import AppRouter from './components/router/AppRouter';
-
-// poner el empty cart con link a home
+import { LoginProvider } from './Context/LoginContext'
+import AppRouter from './router/AppRouter'
+import './App.css'
 
 const App = () => {
 

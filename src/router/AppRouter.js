@@ -1,9 +1,9 @@
 import React from 'react'
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
-import { useLoginContext } from '../../Context/LoginContext'
-
+import { BrowserRouter } from 'react-router-dom'
+import { useLoginContext } from '../../src/Context/LoginContext'
 import PrivateRoutes from './PrivateRoutes';
 import PublicRoutes from './PublicRoutes';
+import '../components/Cartwidget/CartWidget.css'
 
 const AppRouter = () => {
 

@@ -1,6 +1,9 @@
 import { createContext, useContext, useState } from "react";
 import Swal from 'sweetalert2'
 
+// isOFf para aplcar los descuentos en el momento
+// powerTotal para calcular la potencia estimada con las partes seleccionadas (similar a un importe total)
+
 export const CartContext = createContext();
 
 export const CartProvider = ({ children }) => {
@@ -20,11 +23,11 @@ export const CartProvider = ({ children }) => {
     }
 
     const cartQuantity = () => {
-        return cart.reduce((acc, item) => acc + item.cantidad, 0)
+        return cart.reduce((acc, item) => acc + item.amount, 0)
     }
 
     const cartTotal = () => {
-        return cart.reduce((acc, item) => acc + (item.cantidad * item.price), 0)
+        return cart.reduce((acc, item) => acc + (item.amount * item.price), 0)
     }
 
     const powerTotal = () => {
@@ -32,11 +35,10 @@ export const CartProvider = ({ children }) => {
     }
 
     const isOff = () => {
-        return cart.reduce((acc, item) => acc + ((item.cantidad * item.price) - (item.cantidad * item.price * (item.off / 100))), 0)
+        return cart.reduce((acc, item) => acc + ((item.amount * item.price) - (item.amount * item.price * (item.off / 100))), 0)
     }
 
     const emptyCart = () => {
-
         Swal.fire({
             title: 'Are you sure?',
             icon: 'warning',

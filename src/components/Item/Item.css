@@ -1,0 +1,15 @@
+.backgroundMine {
+    padding: 15px;
+    box-shadow: 1px 1px 10px 1px rgb(148, 148, 148);
+    margin: 5px;
+    background: aliceblue;
+}
+
+.spinnercito {
+    margin-left: 50%;
+}
+
+.text-link{
+    text-decoration: none;
+    color: black;
+}
