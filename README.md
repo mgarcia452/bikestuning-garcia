@@ -1,4 +1,5 @@
-![Animation](https://user-images.githubusercontent.com/103382324/188972132-8e6e7891-8448-49d3-ba1f-7154d5f7c019.gif)
+![Proyecto final short](https://user-images.githubusercontent.com/103382324/194370874-ca84f303-831d-4c6f-b841-03c929ab7c4d.gif)
+
 # Bikestuning
 
 Un e-commerce de piezas de upgrade de vehiculos, donde se caclula porcentualmente la potencia esperada.
